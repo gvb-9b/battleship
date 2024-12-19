@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <title>My battleship</title>
+  </head>
+
+  <body>
+      <h1 id="laBatailleNavale">La bataille navale</h1>
+      <h2 id="actualPlayer">Player 1 turn</h2>
+      <h1 id="winner" ></h1>
+
+      <div id="container">
+        <div id="letters">
+          <div id="blankCase"></div>
+          <div class="oneLetter">A</div>
+          <div class="oneLetter">B</div>
+          <div class="oneLetter">C</div>
+          <div class="oneLetter">D</div>
+          <div class="oneLetter">E</div>
+          <div class="oneLetter">F</div>
+          <div class="oneLetter">G</div>
+          <div class="oneLetter">H</div>
+          <div class="oneLetter">I</div>
+          <div class="oneLetter">J</div>
+        </div>
+
+        <div id="topAndGrid">
+          <div id="numbers">
+            <div class="oneNumber">1</div>
+            <div class="oneNumber">2</div>
+            <div class="oneNumber">3</div>
+            <div class="oneNumber">4</div>
+            <div class="oneNumber">5</div>
+            <div class="oneNumber">6</div>
+            <div class="oneNumber">7</div>
+            <div class="oneNumber">8</div>
+            <div class="oneNumber">9</div>
+            <div class="oneNumber">10</div>
+          </div>
+
+          <div class="grid"></div>
+        </div>
+
+        <div id="rules">
+          <div id="elRules">
+            <p class="infosRules"><strong>1 porte-avion</strong> - 5 cases</p>
+            <p class="infosRules"><strong>1 croiseur</strong> - 4 cases</p>
+            <p class="infosRules">
+              <strong>2 sous-marins</strong> - 3 cases chacun
+            </p>
+            <p class="infosRules"><strong>1 torpilleur</strong> - 2 cases</p>
+            <div id="elColoredSquares"><span><span id="blueSquare"></span> À l'eau</span><span><span id="redSquare"></span> Touché</span></div>
+            <br><br> <div class="sunkShipsTitle">Player 1 infos : </div>
+            <br><div id="score1"></div>
+            <div id="sunkShips"></div>
+            <br><br> <div class="sunkShipsTitle">Player 1 infos : </div>
+            <br><div id="score2"></div>
+            <div id="sunkShips2"></div>
+          </div>
+        </div>
+      </div>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
